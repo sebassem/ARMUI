@@ -4,16 +4,12 @@
         "kind": "Form",
         "properties":{
             "title": "Azure Arc Arcbox",
-            "basics": {
-                "isWizard": true,
-                "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
-            },
             "steps": [
                 {
                     "name" : "basics",
                     "label": "Deployment location",
+                    "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)",
                     "basics": {
-                        "isWizard": true,
                         "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
                     },
                     "elements": [
@@ -90,34 +86,6 @@
                             },
                             "options": {
                                 "hideConfirmation": false
-                            },
-                            "visible": true
-                        }
-                    ]
-                },
-                {
-                    "name": "ArcServers",
-                    "label": "Azure Arc-enabled servers",
-                    "bladeTitle": "Azure Arc-enabled servers",
-                    "elements": [
-                        {
-                            "name": "ArcServersOption",
-                            "type": "Microsoft.Common.OptionsGroup",
-                            "label": "Deploy Arc-enabled servers",
-                            "defaultValue": "No",
-                            "toolTip": "Do you want to deploy Azure Arc-enabled servers?",
-                            "constraints": {
-                                "allowedValues": [
-                                    {
-                                        "label": "No",
-                                        "value": "No"
-                                    },
-                                    {
-                                        "label": "Yes",
-                                        "value": "Yes"
-                                    }
-                                ],
-                                "required": true
                             },
                             "visible": true
                         }
