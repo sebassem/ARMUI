@@ -29,7 +29,10 @@
                             "label": "My Ip address",
                             "defaultValue": "",
                             "toolTip": "",
-                            "visible": true
+                            "visible": true,
+                            "constraints": {
+                                "required": true
+                            }
                         },
                         {
                             "name": "sshkey",
@@ -37,7 +40,10 @@
                             "label": "SSH RSA Public Key",
                             "defaultValue": "",
                             "toolTip": "",
-                            "visible": true
+                            "visible": true,
+                            "constraints": {
+                                "required": true
+                            }
                         },
                         {
                             "name": "SPNclientId",
@@ -45,7 +51,10 @@
                             "label": "SPN client Id",
                             "defaultValue": "",
                             "toolTip": "",
-                            "visible": true
+                            "visible": true,
+                            "constraints": {
+                                "required": true
+                            }
                         },
                         {
                             "name": "SPNclientSecret",
@@ -68,7 +77,9 @@
                             "label": "Windows Admin Username",
                             "defaultValue": "",
                             "toolTip": "",
-                            "visible": true
+                            "constraints": {
+                                "required": true
+                            }
                         },
                         {
                             "name": "WindowsAdminPassword",
