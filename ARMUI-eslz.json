@@ -16,7 +16,7 @@
                     ]
                 },
                 {
-                    "name": "ArcBoxpreres",
+                    "name": "ArcBoxprereqs",
                     "label": "ArcBox pre-requisites",
                     "bladeTitle": "Arcbox prerequisites",
                     "elements": [
@@ -91,8 +91,10 @@
         },
         "outputs":{
             "parameters":{
-                "myipaddress": "[steps('ArcBoxpreres').myipaddress]"
-            }
+                "myipaddress": "[steps('ArcBoxprereqs').myipaddress]"
+            },
+            "kind": "Tenant",
+            "location": "[steps('basics').resourceScope.location.name]"
         }
     }
 }
