@@ -1,11 +1,10 @@
 {
     "$schema": "<relative path to createFormUI.schema.json>",
-    "parameters": {
-        "config": {
+    "config": {
             "isWizard": false,
             "basics": {
                 "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
-             }
+            }
         },
     "view":{
         "kind": "Form",
