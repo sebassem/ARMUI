@@ -90,6 +90,34 @@
                             "visible": true
                         }
                     ]
+                },
+                {
+                    "name": "ArcServers",
+                    "label": "Azure Arc-enabled servers",
+                    "bladeTitle": "Azure Arc-enabled servers",
+                    "elements":[
+                        {
+                            "name": "optionsGroup1",
+                            "type": "Microsoft.Common.OptionsGroup",
+                            "label": "Some options group",
+                            "defaultValue": "Value two",
+                            "toolTip": "",
+                            "constraints": {
+                                "allowedValues": [
+                                    {
+                                        "label": "Value one",
+                                        "value": "one"
+                                    },
+                                    {
+                                        "label": "Value two",
+                                        "value": "two"
+                                    }
+                                ],
+                            "required": true
+                            },
+                            "visible": true
+                        }
+                    ]
                 }
             ]
         },
