@@ -24,6 +24,14 @@
                     "bladeTitle": "Arcbox prerequisites",
                     "elements": [
                         {
+                            "name": "InfoPrereqs",
+                            "type": "Microsoft.Common.InfoBox",
+                            "visible": true,
+                            "options": {
+                                "text": "Those parameters will be used to deploy and configure your Azure Arcbox"
+                            }
+                        },
+                        {
                             "name": "myipaddress",
                             "type": "Microsoft.Common.TextBox",
                             "label": "My Ip address",
