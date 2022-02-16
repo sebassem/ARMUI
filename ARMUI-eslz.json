@@ -1,15 +1,14 @@
 {
     "$schema": "<relative path to createFormUI.schema.json>",
-    "config": {
-            "isWizard": false,
-            "basics": {
-                "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
-            }
-        },
     "view":{
         "kind": "Form",
         "properties":{
             "title": "Azure Arc Arcbox",
+            "config":{
+                "basics": {
+                    "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
+                 }
+            },
             "steps": [
                 {
                     "name" : "basics",
@@ -17,6 +16,7 @@
                     "elements": [
                         {
                             "name": "resourceScope",
+                            "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)",
                             "type": "Microsoft.Common.ResourceScope"
                         }
                     ]
