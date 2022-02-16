@@ -4,6 +4,10 @@
         "kind": "Form",
         "properties":{
             "title": "Azure Arc Arcbox",
+            "basics": {
+                "isWizard": true,
+                "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
+            },
             "steps": [
                 {
                     "name" : "basics",
@@ -12,7 +16,6 @@
                         "isWizard": true,
                         "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
                     },
-                    "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)",
                     "elements": [
                         {
                             "name": "resourceScope",
