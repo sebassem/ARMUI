@@ -4,7 +4,7 @@
         "kind": "Form",
         "properties":{
             "title": "Azure Arc Arcbox",
-            "isWizard": true,
+            "isWizard": false,
             "steps": [
                 {
                     "name" : "basics",
@@ -260,6 +260,7 @@
                     "name": "ArcK8s",
                     "label": "Azure Arc-enabled Kubernetes",
                     "bladeTitle": "Azure Arc-enabled Kubernetes",
+                    "description": "![K8s Log](https://i.postimg.cc/Mc6w7RxK/ArcK8s.png)",
                     "elements":[
                         {
                             "name": "InfoArcK8s",
@@ -296,6 +297,7 @@
                     "name": "ArcDataServices",
                     "label": "Azure Arc-enabled data services",
                     "bladeTitle": "Azure Arc-enabled data services",
+                    "description": "![K8s Log](https://i.postimg.cc/zyS5H7sc/ArcData.png)",
                     "elements":[
                         {
                             "name": "InfoArcData",
