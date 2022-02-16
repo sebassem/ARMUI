@@ -9,9 +9,9 @@
                 {
                     "name" : "basics",
                     "label": "Deployment location",
-                    "description": "# Hello",
+                    "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)",
                     "basics": {
-                        "description": "# Hello ![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
+                        "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
                     },
                     "elements": [
                         {
