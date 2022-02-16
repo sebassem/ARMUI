@@ -97,6 +97,14 @@
                     "bladeTitle": "Azure Arc-enabled servers",
                     "elements":[
                         {
+                            "name": "InfoArcServers",
+                            "type": "Microsoft.Common.TextBlock",
+                            "visible": true,
+                            "options": {
+                                "text": "ArcBox deploys one single-node Rancher K3s cluster (ArcBox-CAPI-MGMT), which is then transformed to a Cluster API management cluster with the Azure CAPZ provider, and a workload cluster is deployed onto the management cluster. The Azure Arc-enabled data services and data controller are deployed onto this workload cluster via a PowerShell script that runs when first logging into ArcBox-Client virtual machine."
+                            }
+                        },
+                        {
                             "name": "DeployArcServers",
                             "type": "Microsoft.Common.OptionsGroup",
                             "label": "DeployAzure Arc-enabled servers?",
@@ -126,7 +134,7 @@
                                 {
                                     "name": "DeploySqlServer",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "DeployAzure Arc-enabled SQL server?",
+                                    "label": "Deploy Azure Arc-enabled SQL server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -147,7 +155,7 @@
                                 {
                                     "name": "DeployWin2k19",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "DeployAzure Arc-enabled Windows 2019 server?",
+                                    "label": "Deploy Azure Arc-enabled Windows 2019 server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -168,7 +176,7 @@
                                 {
                                     "name": "DeployWin2k22",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "DeployAzure Arc-enabled Windows 2022 server?",
+                                    "label": "Deploy Azure Arc-enabled Windows 2022 server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -189,7 +197,7 @@
                                 {
                                     "name": "DeployUbuntuSrv",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "DeployAzure Arc-enabled Ubuntu server?",
+                                    "label": "Deploy Azure Arc-enabled Ubuntu server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -210,7 +218,7 @@
                                 {
                                     "name": "DeployCentOsSrv",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "DeployAzure Arc-enabled CentOs server?",
+                                    "label": "Deploy Azure Arc-enabled CentOs server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -238,9 +246,17 @@
                     "bladeTitle": "Azure Arc-enabled Kubernetes",
                     "elements":[
                         {
+                            "name": "InfoArcK8s",
+                            "type": "Microsoft.Common.TextBlock",
+                            "visible": true,
+                            "options": {
+                                "text": "ArcBox deploys one single-node Rancher K3s cluster running on an Azure virtual machine. This cluster is then connected to Azure as an Azure Arc-enabled Kubernetes resource (ArcBox-K3s)."
+                            }
+                        },
+                        {
                             "name": "DeployArcK8s",
                             "type": "Microsoft.Common.OptionsGroup",
-                            "label": "DeployAzure Arc-enabled Kubernetes?",
+                            "label": "Deploy Azure Arc-enabled Kubernetes?",
                             "defaultValue": "No",
                             "toolTip": "",
                             "constraints": {
