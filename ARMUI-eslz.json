@@ -9,6 +9,7 @@
                     "name" : "basics",
                     "label": "Deployment location",
                     "basics": {
+                        "isWizard": true,
                         "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
                     },
                     "elements": [
