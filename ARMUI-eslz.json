@@ -110,7 +110,7 @@
                     "name": "ArcServers",
                     "label": "Azure Arc-enabled servers",
                     "bladeTitle": "Azure Arc-enabled servers",
-                    "description": "![Servers Log](https://i.postimg.cc/W1zjs6hz/Picture1.png)",
+                    "description": "![Servers Log](https://i.postimg.cc/Fs2GKhKS/Picture1.png)",
                     "elements":[
                         {
                             "name": "InfoArcServers",
