@@ -16,7 +16,7 @@
                     ]
                 },
                 {
-                    "name": "ArcBox-prerequisites",
+                    "name": "ArcBoxpreres",
                     "label": "ArcBox pre-requisites",
                     "bladeTitle": "Arcbox prerequisites",
                     "elements": [
@@ -88,6 +88,7 @@
                     ]
                 }
             ]
-        }
+        },
+        "outputs":{}
     }
 }
