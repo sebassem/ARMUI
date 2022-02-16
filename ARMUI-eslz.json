@@ -2,7 +2,6 @@
     "$schema": "<relative path to createFormUI.schema.json>",
     "view":{
         "kind": "Form",
-        "isWizard": true,
         "properties":{
             "title": "Azure Arc Arcbox",
             "steps": [
@@ -117,6 +116,119 @@
                             "required": true
                             },
                             "visible": true
+                        },
+                        {
+                            "name": "ArcServersSubSection",
+                            "type": "Microsoft.Common.Section",
+							"label": "Arc-enabled servers options",
+                            "visible": "[equals(steps('ArcServers').DeployArcServers,'Yes')]",
+                            "elements": [
+                                {
+                                    "name": "DeploySqlServer",
+                                    "type": "Microsoft.Common.OptionsGroup",
+                                    "label": "Do you want to deploy Azure Arc-enabled SQL server?",
+                                    "defaultValue": "No",
+                                    "toolTip": "",
+                                    "constraints": {
+                                        "allowedValues": [
+                                            {
+                                                "label": "No",
+                                                "value": "No"
+                                            },
+                                            {
+                                                "label": "Yes",
+                                                "value": "Yes"
+                                            }
+                                        ],
+                                    "required": true
+                                    },
+                                    "visible": true
+                                },
+                                {
+                                    "name": "DeployWin2k19",
+                                    "type": "Microsoft.Common.OptionsGroup",
+                                    "label": "Do you want to deploy Azure Arc-enabled Windows 2019 server?",
+                                    "defaultValue": "No",
+                                    "toolTip": "",
+                                    "constraints": {
+                                        "allowedValues": [
+                                            {
+                                                "label": "No",
+                                                "value": "No"
+                                            },
+                                            {
+                                                "label": "Yes",
+                                                "value": "Yes"
+                                            }
+                                        ],
+                                    "required": true
+                                    },
+                                    "visible": true
+                                },
+                                {
+                                    "name": "DeployWin2k22",
+                                    "type": "Microsoft.Common.OptionsGroup",
+                                    "label": "Do you want to deploy Azure Arc-enabled Windows 2022 server?",
+                                    "defaultValue": "No",
+                                    "toolTip": "",
+                                    "constraints": {
+                                        "allowedValues": [
+                                            {
+                                                "label": "No",
+                                                "value": "No"
+                                            },
+                                            {
+                                                "label": "Yes",
+                                                "value": "Yes"
+                                            }
+                                        ],
+                                    "required": true
+                                    },
+                                    "visible": true
+                                },
+                                {
+                                    "name": "DeployUbuntuSrv",
+                                    "type": "Microsoft.Common.OptionsGroup",
+                                    "label": "Do you want to deploy Azure Arc-enabled Ubuntu server?",
+                                    "defaultValue": "No",
+                                    "toolTip": "",
+                                    "constraints": {
+                                        "allowedValues": [
+                                            {
+                                                "label": "No",
+                                                "value": "No"
+                                            },
+                                            {
+                                                "label": "Yes",
+                                                "value": "Yes"
+                                            }
+                                        ],
+                                    "required": true
+                                    },
+                                    "visible": true
+                                },
+                                {
+                                    "name": "DeployCentOsSrv",
+                                    "type": "Microsoft.Common.OptionsGroup",
+                                    "label": "Do you want to deploy Azure Arc-enabled CentOs server?",
+                                    "defaultValue": "No",
+                                    "toolTip": "",
+                                    "constraints": {
+                                        "allowedValues": [
+                                            {
+                                                "label": "No",
+                                                "value": "No"
+                                            },
+                                            {
+                                                "label": "Yes",
+                                                "value": "Yes"
+                                            }
+                                        ],
+                                    "required": true
+                                    },
+                                    "visible": true
+                                }
+                            ]
                         }
                     ]
                 }
