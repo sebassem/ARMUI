@@ -97,20 +97,20 @@
                     "bladeTitle": "Azure Arc-enabled servers",
                     "elements":[
                         {
-                            "name": "optionsGroup1",
+                            "name": "DeployArcServers",
                             "type": "Microsoft.Common.OptionsGroup",
-                            "label": "Some options group",
-                            "defaultValue": "Value two",
+                            "label": "Do you want to deploy Azure Arc-enabled servers?",
+                            "defaultValue": "No",
                             "toolTip": "",
                             "constraints": {
                                 "allowedValues": [
                                     {
-                                        "label": "Value one",
-                                        "value": "one"
+                                        "label": "No",
+                                        "value": "No"
                                     },
                                     {
-                                        "label": "Value two",
-                                        "value": "two"
+                                        "label": "Yes",
+                                        "value": "Yes"
                                     }
                                 ],
                             "required": true
