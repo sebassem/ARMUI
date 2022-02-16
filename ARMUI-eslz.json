@@ -98,7 +98,7 @@
                     "elements":[
                         {
                             "name": "InfoArcServers",
-                            "type": "Microsoft.Common.TextBlock",
+                            "type": "Microsoft.Common.InfoBox",
                             "visible": true,
                             "options": {
                                 "text": "ArcBox deploys one single-node Rancher K3s cluster (ArcBox-CAPI-MGMT), which is then transformed to a Cluster API management cluster with the Azure CAPZ provider, and a workload cluster is deployed onto the management cluster. The Azure Arc-enabled data services and data controller are deployed onto this workload cluster via a PowerShell script that runs when first logging into ArcBox-Client virtual machine."
@@ -247,7 +247,7 @@
                     "elements":[
                         {
                             "name": "InfoArcK8s",
-                            "type": "Microsoft.Common.TextBlock",
+                            "type": "Microsoft.Common.InfoBox",
                             "visible": true,
                             "options": {
                                 "text": "ArcBox deploys one single-node Rancher K3s cluster running on an Azure virtual machine. This cluster is then connected to Azure as an Azure Arc-enabled Kubernetes resource (ArcBox-K3s)."
