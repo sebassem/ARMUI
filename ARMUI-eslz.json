@@ -5,9 +5,6 @@
         "properties":{
             "title": "Azure Arc Arcbox",
             "isWizard": true,
-            "config":{
-                "isWizard": true
-            },
             "steps": [
                 {
                     "name" : "basics",
