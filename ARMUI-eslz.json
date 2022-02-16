@@ -2,11 +2,13 @@
     "$schema": "<relative path to createFormUI.schema.json>",
     "view":{
         "kind": "Form",
-        "config":{
-            "isWizard": false,
-            "basics": {
-                "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
-             }
+        "parameters":{
+            "config":{
+                "isWizard": false,
+                "basics": {
+                    "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
+                 }
+            }
         },
         "properties":{
             "title": "Azure Arc Arcbox",
