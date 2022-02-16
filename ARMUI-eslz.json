@@ -21,7 +21,7 @@
                     "bladeTitle": "Arcbox prerequisites",
                     "elements": [
                         {
-                            "name": "My Ip address",
+                            "name": "myipaddress",
                             "type": "Microsoft.Common.TextBox",
                             "label": "My Ip address",
                             "defaultValue": "",
@@ -29,7 +29,7 @@
                             "visible": true
                         },
                         {
-                            "name": "SSH RSA Public Key",
+                            "name": "sshkey",
                             "type": "Microsoft.Common.TextBox",
                             "label": "SSH RSA Public Key",
                             "defaultValue": "",
@@ -37,7 +37,7 @@
                             "visible": true
                         },
                         {
-                            "name": "SPN client Id",
+                            "name": "SPNclientId",
                             "type": "Microsoft.Common.TextBox",
                             "label": "SPN client Id",
                             "defaultValue": "",
@@ -45,7 +45,7 @@
                             "visible": true
                         },
                         {
-                            "name": "SPN client Secret",
+                            "name": "SPNclientSecret",
                             "type": "Microsoft.Common.PasswordBox",
                             "label": {
                                 "password": "SPN client Secret"
@@ -60,7 +60,7 @@
                             "visible": true
                         },
                         {
-                            "name": "Windows Admin Username",
+                            "name": "WindowsAdminUsername",
                             "type": "Microsoft.Common.TextBox",
                             "label": "Windows Admin Username",
                             "defaultValue": "",
@@ -68,7 +68,7 @@
                             "visible": true
                         },
                         {
-                            "name": "Windows Admin Password",
+                            "name": "WindowsAdminPassword",
                             "type": "Microsoft.Common.PasswordBox",
                             "label": {
                                 "password": "Windows Admin Password",
@@ -89,6 +89,10 @@
                 }
             ]
         },
-        "outputs":{}
+        "outputs":{
+            "parameters":{
+                "myipaddress": "[steps('ArcBoxpreres').myipaddress]"
+            }
+        }
     }
 }
