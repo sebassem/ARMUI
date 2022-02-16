@@ -296,7 +296,6 @@
                 {
                     "name": "ArcDataServices",
                     "label": "Azure Arc-enabled data services",
-                    "visible": "[equals(steps('ArcK8s').DeployArcK8s,'Yes')]",
                     "bladeTitle": "Azure Arc-enabled data services",
                     "elements":[
                         {
