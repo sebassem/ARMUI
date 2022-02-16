@@ -331,7 +331,7 @@
                             "name": "ArcDataSubSection",
                             "type": "Microsoft.Common.Section",
 							"label": "Arc-enabled data services options",
-                            "visible": "[equals(steps('ArcDataServices').DeployArcServers,'Yes')]",
+                            "visible": "[equals(steps('ArcDataServices').DeployArcData,'Yes')]",
                             "elements": [
                                 {
                                     "name": "DeployPostgreSQL",
