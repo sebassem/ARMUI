@@ -107,7 +107,7 @@
                         {
                             "name": "DeployArcServers",
                             "type": "Microsoft.Common.OptionsGroup",
-                            "label": "DeployAzure Arc-enabled servers?",
+                            "label": "Deploy Azure Arc-enabled servers?",
                             "defaultValue": "No",
                             "toolTip": "",
                             "constraints": {
@@ -257,6 +257,42 @@
                             "name": "DeployArcK8s",
                             "type": "Microsoft.Common.OptionsGroup",
                             "label": "Deploy Azure Arc-enabled Kubernetes?",
+                            "defaultValue": "No",
+                            "toolTip": "",
+                            "constraints": {
+                                "allowedValues": [
+                                    {
+                                        "label": "No",
+                                        "value": "No"
+                                    },
+                                    {
+                                        "label": "Yes",
+                                        "value": "Yes"
+                                    }
+                                ],
+                            "required": true
+                            },
+                            "visible": true
+                        }
+                    ]
+                },
+                {
+                    "name": "ArcDataServices",
+                    "label": "Azure Arc-enabled data services",
+                    "bladeTitle": "Azure Arc-enabled data services",
+                    "elements":[
+                        {
+                            "name": "InfoArcData",
+                            "type": "Microsoft.Common.InfoBox",
+                            "visible": true,
+                            "options": {
+                                "text": "ArcBox deploys one single-node Rancher K3s cluster (ArcBox-CAPI-MGMT), which is then transformed to a Cluster API management cluster with the Azure CAPZ provider, and a workload cluster is deployed onto the management cluster. The Azure Arc-enabled data services and data controller are deployed onto this workload cluster via a PowerShell script that runs when first logging into ArcBox-Client virtual machine."
+                            }
+                        },
+                        {
+                            "name": "DeployArcData",
+                            "type": "Microsoft.Common.OptionsGroup",
+                            "label": "Deploy Azure Arc-enabled data services?",
                             "defaultValue": "No",
                             "toolTip": "",
                             "constraints": {
