@@ -99,7 +99,7 @@
                         {
                             "name": "DeployArcServers",
                             "type": "Microsoft.Common.OptionsGroup",
-                            "label": "Do you want to deploy Azure Arc-enabled servers?",
+                            "label": "DeployAzure Arc-enabled servers?",
                             "defaultValue": "No",
                             "toolTip": "",
                             "constraints": {
@@ -126,7 +126,7 @@
                                 {
                                     "name": "DeploySqlServer",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Do you want to deploy Azure Arc-enabled SQL server?",
+                                    "label": "DeployAzure Arc-enabled SQL server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -147,7 +147,7 @@
                                 {
                                     "name": "DeployWin2k19",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Do you want to deploy Azure Arc-enabled Windows 2019 server?",
+                                    "label": "DeployAzure Arc-enabled Windows 2019 server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -168,7 +168,7 @@
                                 {
                                     "name": "DeployWin2k22",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Do you want to deploy Azure Arc-enabled Windows 2022 server?",
+                                    "label": "DeployAzure Arc-enabled Windows 2022 server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -189,7 +189,7 @@
                                 {
                                     "name": "DeployUbuntuSrv",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Do you want to deploy Azure Arc-enabled Ubuntu server?",
+                                    "label": "DeployAzure Arc-enabled Ubuntu server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -210,7 +210,7 @@
                                 {
                                     "name": "DeployCentOsSrv",
                                     "type": "Microsoft.Common.OptionsGroup",
-                                    "label": "Do you want to deploy Azure Arc-enabled CentOs server?",
+                                    "label": "DeployAzure Arc-enabled CentOs server?",
                                     "defaultValue": "No",
                                     "toolTip": "",
                                     "constraints": {
@@ -229,6 +229,34 @@
                                     "visible": true
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "name": "ArcK8s",
+                    "label": "Azure Arc-enabled Kubernetes",
+                    "bladeTitle": "Azure Arc-enabled Kubernetes",
+                    "elements":[
+                        {
+                            "name": "DeployArcK8s",
+                            "type": "Microsoft.Common.OptionsGroup",
+                            "label": "DeployAzure Arc-enabled Kubernetes?",
+                            "defaultValue": "No",
+                            "toolTip": "",
+                            "constraints": {
+                                "allowedValues": [
+                                    {
+                                        "label": "No",
+                                        "value": "No"
+                                    },
+                                    {
+                                        "label": "Yes",
+                                        "value": "Yes"
+                                    }
+                                ],
+                            "required": true
+                            },
+                            "visible": true
                         }
                     ]
                 }
