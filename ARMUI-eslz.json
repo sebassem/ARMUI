@@ -10,9 +10,6 @@
                     "name" : "basics",
                     "label": "Deployment location",
                     "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)",
-                    "basics": {
-                        "description": "![Arcbox](https://i.ibb.co/KDmZW5L/output-onlinepngtools.png)"
-                    },
                     "elements": [
                         {
                             "name": "resourceScope",
