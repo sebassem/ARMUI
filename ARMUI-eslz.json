@@ -1,0 +1,93 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/0.1.2-preview/CreateUIDefinition.MultiVm.json#",
+    "view":{
+        "kind": "form",
+        "properties":{
+            "title": "Azure Arc Arcbox",
+            "steps": [
+                {
+                    "name" : "basics",
+                    "label": "Deployment location",
+                    "elements": [
+                        {
+                            "name": "resourceScope",
+                            "type": "Microsoft.Common.ResourceScope"
+                        }
+                    ]
+                },
+                {
+                    "name": "ArcBox-prerequisites",
+                    "label": "ArcBox pre-requisites",
+                    "bladeTitle": "Arcbox prerequisites",
+                    "elements": [
+                        {
+                            "name": "My Ip address",
+                            "type": "Microsoft.Common.TextBox",
+                            "label": "My Ip address",
+                            "defaultValue": "",
+                            "toolTip": "",
+                            "visible": true
+                        },
+                        {
+                            "name": "SSH RSA Public Key",
+                            "type": "Microsoft.Common.TextBox",
+                            "label": "SSH RSA Public Key",
+                            "defaultValue": "",
+                            "toolTip": "",
+                            "visible": true
+                        },
+                        {
+                            "name": "SPN client Id",
+                            "type": "Microsoft.Common.TextBox",
+                            "label": "SPN client Id",
+                            "defaultValue": "",
+                            "toolTip": "",
+                            "visible": true
+                        },
+                        {
+                            "name": "SPN client Secret",
+                            "type": "Microsoft.Common.PasswordBox",
+                            "label": {
+                                "password": "SPN client Secret"
+                            },
+                            "toolTip": "",
+                            "constraints": {
+                                "required": true
+                            },
+                            "options": {
+                                "hideConfirmation": true
+                            },
+                            "visible": true
+                        },
+                        {
+                            "name": "Windows Admin Username",
+                            "type": "Microsoft.Common.TextBox",
+                            "label": "Windows Admin Username",
+                            "defaultValue": "",
+                            "toolTip": "",
+                            "visible": true
+                        },
+                        {
+                            "name": "Windows Admin Password",
+                            "type": "Microsoft.Common.PasswordBox",
+                            "label": {
+                                "password": "Windows Admin Password",
+                                "confirmPassword": "Confirm password"
+                            },
+                            "toolTip": "",
+                            "constraints": {
+                                "required": true,
+                                "regex": "^[a-zA-Z0-9]{8,}$",
+                                "validationMessage": "Password must be at least 8 characters long, contain only numbers and letters"
+                            },
+                            "options": {
+                                "hideConfirmation": false
+                            },
+                            "visible": true
+                        }
+                    ]
+                } 
+            ]
+        }
+    }
+}
