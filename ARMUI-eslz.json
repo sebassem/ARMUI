@@ -2,6 +2,7 @@
     "$schema": "<relative path to createFormUI.schema.json>",
     "view":{
         "kind": "Form",
+        "isWizard": true,
         "properties":{
             "title": "Azure Arc Arcbox",
             "steps": [
