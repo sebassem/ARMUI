@@ -90,35 +90,8 @@
                             "visible": true
                         }
                     ]
-                },
-                {
-                    "name": "ArcServers",
-                    "label": "Azure Arc-enabled servers",
-                    "bladeTitle": "Azure Arc-enabled servers",
-                    "elements": [
-                        {
-                            "name": "ArcServersOption",
-                            "type": "Microsoft.Common.OptionsGroup",
-                            "label": "Deploy Arc-enabled servers",
-                            "defaultValue": "No",
-                            "toolTip": "Do you want to deploy Azure Arc-enabled servers?",
-                            "constraints": {
-                                "allowedValues": [
-                                    {
-                                        "label": "No",
-                                        "value": "No"
-                                    },
-                                    {
-                                        "label": "Yes",
-                                        "value": "Yes"
-                                    }
-                                ],
-                                "required": true
-                            },
-                            "visible": true
-                        }
-                    ]
                 }
+                
             ]
         },
         "outputs":{
