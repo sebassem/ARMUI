@@ -4,18 +4,7 @@
         "kind": "Form",
         "properties":{
             "title": "Azure Arc Arcbox",
-            "isWizard": false,"location": {
-                "label": "Custom label for location",
-                "toolTip": "provide a useful tooltip",
-                "resourceTypes": [
-                    "Microsoft.Compute/virtualMachines"
-                ],
-                "allowedValues": [
-                    "eastus",
-                    "westus2"
-                ],
-                "visible": true
-            },
+            "isWizard": false,
             "steps": [
                 {
                     "name" : "basics",
